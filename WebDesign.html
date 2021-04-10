@@ -9,18 +9,31 @@
     <link rel="stylesheet" type="text/css" href="./bootstrap.css" />
     <style>
         body {
-            background-color: lightblue;
             background-image: url('https://cdn.dribbble.com/users/6542125/screenshots/15436606/media/c8ce6885ca4358ed2d2909133eeaab66.jpg?compress=1&resize=1000x750');
-        }
 
-        table,
-        footer {
-            text-align: center;
         }
 
         footer {
             background-color: rgb(82, 82, 82);
             color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        footer>div:nth-child(1) {
+            grid-column: 2;
+        }
+
+        footer>div:nth-child(2) {
+            grid-column: 6;
+        }
+
+        footer>div:nth-child(3) {
+            grid-column: -2;
+        }
+
+        .breadcrumb-item.active {
+            color: #ffffcc;
         }
 
         body>div:nth-child(2) {
@@ -36,11 +49,11 @@
             background-color: rgb(220, 220, 220);
         }
 
-        body>div>div>div>a {
+        body>div>div>div>p>a {
             color: blue;
         }
 
-        body>div>div>div>a:hover {
+        body>div>div>div>p>a:hover {
             color: red;
 
         }
@@ -119,8 +132,8 @@
             <div class="tab-pane fade active show" id="class1">
 
                 <p>內容簡介:介紹關於Git版本控制與如何使用Github</p>
-                <a href="https://drive.google.com/file/d/1jXX-LBIHIQNKvZtd4EC2lgWkdidSSGjY/view?usp=sharing"
-                    target="_blank">PPT : 0_課程介紹&準備</a>
+                <p>PPT : <a href="https://drive.google.com/file/d/1jXX-LBIHIQNKvZtd4EC2lgWkdidSSGjY/view?usp=sharing"
+                        target="_blank">0_課程介紹&準備</a></p>
                 <p><iframe width="1120" height="730" src="https://www.youtube.com/embed/bRBbg8RkHpA"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -129,8 +142,8 @@
             <div class="tab-pane fade show" id="class2">
 
                 <p>內容簡介:</p>
-                <a href="https://drive.google.com/file/d/1qerY8DK-UDPRzuJh7yXCGk5UuPM7-IMw/view?usp=sharing"
-                    target="_blank">PPT : 1_Git版本控制</a>
+                <p>PPT : <a href="https://drive.google.com/file/d/1qerY8DK-UDPRzuJh7yXCGk5UuPM7-IMw/view?usp=sharing"
+                        target="_blank">1_Git版本控制</a></p>
                 <p><iframe width="1120" height="730" src="https://www.youtube.com/embed/KEO8NvbS45Y"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -139,8 +152,8 @@
             <div class="tab-pane fade show" id="class3">
 
                 <p>內容簡介:</p>
-                <a href="https://drive.google.com/file/d/1qerY8DK-UDPRzuJh7yXCGk5UuPM7-IMw/view?usp=sharing"
-                    target="_blank">PPT : 2_HTML</a>
+                <p>PPT : <a href="https://drive.google.com/file/d/1qerY8DK-UDPRzuJh7yXCGk5UuPM7-IMw/view?usp=sharing"
+                        target="_blank">2_HTML</a></p>
                 <p><iframe width="1120" height="730" src="https://www.youtube.com/embed/UltkIKLwnR4"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -149,8 +162,8 @@
             <div class="tab-pane fade show" id="class4">
 
                 <p>內容簡介:</p>
-                <a href="https://drive.google.com/file/d/1qerY8DK-UDPRzuJh7yXCGk5UuPM7-IMw/view?usp=sharing"
-                    target="_blank">PPT : 2_HTML</a>
+                <p>PPT : <a href="https://drive.google.com/file/d/1qerY8DK-UDPRzuJh7yXCGk5UuPM7-IMw/view?usp=sharing"
+                        target="_blank">2_HTML</a></p>
                 <p><iframe width="1120" height="730" src="https://www.youtube.com/embed/srsW2ndp-sE"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -159,10 +172,11 @@
             <div class="tab-pane fade show" id="class5">
 
                 <p>內容簡介:</p>
-                <a href="https://drive.google.com/file/d/1qerY8DK-UDPRzuJh7yXCGk5UuPM7-IMw/view?usp=sharing"
-                    target="_blank">PPT : 2_HTML</a><BR>
-                <a href="https://drive.google.com/file/d/1xU4lSpnT34TuGnoho4ddTfhtb4uk9jO0/view?usp=sharing"
-                    target="_blank"> 3_CSS</a>
+                <p>PPT : <a href="https://drive.google.com/file/d/1qerY8DK-UDPRzuJh7yXCGk5UuPM7-IMw/view?usp=sharing"
+                        target="_blank">2_HTML </a>
+                    <a href="https://drive.google.com/file/d/1xU4lSpnT34TuGnoho4ddTfhtb4uk9jO0/view?usp=sharing"
+                        target="_blank"> 3_CSS</a>
+                </p>
                 <p><iframe width="1120" height="730" src="https://www.youtube.com/embed/N-eJAq5MeL4"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -170,8 +184,8 @@
             </div>
             <div class="tab-pane fade show" id="class6">
                 <p>內容簡介:</p>
-                <a href="https://drive.google.com/file/d/1xU4lSpnT34TuGnoho4ddTfhtb4uk9jO0/view?usp=sharing"
-                    target="_blank">PPT : 3_CSS</a>
+                <p>PPT : <a href="https://drive.google.com/file/d/1xU4lSpnT34TuGnoho4ddTfhtb4uk9jO0/view?usp=sharing"
+                        target="_blank">3_CSS</a></p>
                 <p><iframe width="1120" height="730" src="https://www.youtube.com/embed/2BJuaTwtrBc"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -179,8 +193,8 @@
             </div>
             <div class="tab-pane fade show" id="class7">
                 <p>內容簡介:</p>
-                <a href="https://drive.google.com/file/d/1xU4lSpnT34TuGnoho4ddTfhtb4uk9jO0/view?usp=sharing"
-                    target="_blank">PPT : 3_CSS</a>
+                <p>PPT : <a href="https://drive.google.com/file/d/1xU4lSpnT34TuGnoho4ddTfhtb4uk9jO0/view?usp=sharing"
+                        target="_blank">3_CSS</a></p>
                 <p><iframe width="1120" height="730" src="https://www.youtube.com/embed/NNHmaK2SKSY"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -211,8 +225,8 @@
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active show" id="class8">
                 <p>內容簡介:</p>
-                <a href="https://drive.google.com/file/d/1xU4lSpnT34TuGnoho4ddTfhtb4uk9jO0/view?usp=sharing"
-                    target="_blank">PPT : 3_CSS</a>
+                <p>PPT : <a href="https://drive.google.com/file/d/1xU4lSpnT34TuGnoho4ddTfhtb4uk9jO0/view?usp=sharing"
+                        target="_blank">3_CSS</a></p>
                 <p><iframe width="1120" height="730" src="https://www.youtube.com/embed/VtOeTZ8fa-g"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -220,8 +234,8 @@
             </div>
             <div class="tab-pane fade show" id="class9">
                 <p>內容簡介:</p>
-                <a href="https://drive.google.com/file/d/1oZK7mpPY1GS8C9EyVrUkKprlsRCl3bLZ/view?usp=sharing"
-                    target="_blank">PPT : 4_Bootstrap</a>
+                <p>PPT : <a href="https://drive.google.com/file/d/1oZK7mpPY1GS8C9EyVrUkKprlsRCl3bLZ/view?usp=sharing"
+                        target="_blank">4_Bootstrap</a></p>
                 <p><iframe width="1120" height="730" src="https://www.youtube.com/embed/J39_VzsdYDQ"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -234,8 +248,8 @@
 
             <div class="tab-pane fade show" id="class10">
                 <p>內容簡介:</p>
-                <a href="https://drive.google.com/file/d/17wAHYZUjwTFS0ypu_yam4_za0W4FnHzt/view?usp=sharing"
-                target="_blank">PPT : 5_FontAwesome</a>
+                <p>PPT : <a href="https://drive.google.com/file/d/17wAHYZUjwTFS0ypu_yam4_za0W4FnHzt/view?usp=sharing"
+                        target="_blank">5_FontAwesome</a></p>
                 <p><iframe width="1120" height="730" src="https://www.youtube.com/embed/tUewm_nTAHM"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -244,8 +258,8 @@
 
             <div class="tab-pane fade show" id="class11">
                 <p>內容簡介:</p>
-                <a href="https://drive.google.com/file/d/1L3HmBIZAAd6niDqFnYSEP7JzmRlQvbCk/view?usp=sharing"
-                    target="_blank">PPT : 6_JavaScript</a>
+                <p>PPT : <a href="https://drive.google.com/file/d/1L3HmBIZAAd6niDqFnYSEP7JzmRlQvbCk/view?usp=sharing"
+                        target="_blank">6_JavaScript</a></p>
                 <p><iframe width="1120" height="730" src="https://www.youtube.com/embed/Eh8ktaOn4-g"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -253,28 +267,35 @@
             </div>
             <div class="tab-pane fade show" id="class12">
                 <p>內容簡介:</p>
-                <a href="" target="_blank">PPT : </a>
+                <p>PPT : <a href="" target="_blank"></a></p>
                 <p><iframe width="1120" height="730" src="" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe></p>
             </div>
             <div class="tab-pane fade show" id="class13">
                 <p>內容簡介:</p>
-                <a href="" target="_blank">PPT : </a>
+                <p>PPT : <a href="" target="_blank"></a></p>
                 <p><iframe width="1120" height="730" src="" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe></p>
 
             </div>
         </div>
+    </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-            crossorigin="anonymous"></script>
+
+    <footer>
+        <div>組員名單:</div>
+        <div>E-mail:</div>
+        <div><a href="#top" style="color: lightyellow;">Back to Top</a></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
