@@ -1,0 +1,85 @@
+{% from 'bootstrap/nav.html' import render_nav_item %}
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{% block title %} Flask Bootstrap {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/static/CSS/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    {% block head %}{% endblock head %}
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="top">
+        <a class="navbar-brand" href="./index.html"><img src="./static/Tetrapods.jpg" width="40"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Web 基礎網頁設計</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./WebDesign.html">Web 基礎網頁設計</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://www.w3schools.com/html/default.asp">w3schools HTML</a>
+                        <a class="dropdown-item" href="https://www.w3schools.com/css/default.asp">w3schools CSS</a>
+                        <a class="dropdown-item" href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+                        <a class="dropdown-item" href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">w3schools
+                            Bootstrap</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Python 程式設計</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./Python.html">Python 程式設計</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://www.w3schools.com/python/default.asp">w3schools
+                            Python</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+    <footer class="text-center">
+        <div>組員名單:</div>
+        <div>E-mail:</div>
+        <div><a href="#top" style="color: lightyellow;">Back to Top</a></div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous"></script>
+
+    {% block script %}{% endblock %}
+</body>
+
+</html>
